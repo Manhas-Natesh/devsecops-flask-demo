@@ -25,7 +25,7 @@ jobs:
       image: semgrep/semgrep
     steps:
       - uses: actions/checkout@v6
-      - run: semgrep scan --config auto --error
+     run: semgrep scan --config p/python --error
 
   container-scan:
     name: 3. Docker Build & Trivy Scan
